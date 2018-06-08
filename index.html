@@ -1,0 +1,88 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=0.75">
+<title>
+	Dan Browder
+</title>
+<style>
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:100,200,300);
+	
+@media only screen and (max-device-width: 736px) {
+	body { font-weight: 300 !important; }
+	h1 { font-weight: 300 !important; }
+	a { font-weight: 300 !important; }
+}
+
+body {
+	font-family: Montserrat; 
+	font-weight: 100;
+	background-color: #19AEB4;
+	color: white;
+	font-size: 150%;
+	line-height: 1.75;
+	margin: 33px;
+	margin-bottom: 250px;
+}
+a {
+	font-size: 90%;
+	font-weight: 200;
+	color: #19AEB4;
+	background-color: rgba(255,255,255,0.9);
+	text-decoration: none;
+	border-radius: 50px;
+	padding: 2px 8px 2px 8px;
+	transition: background-color 1s;
+}
+a:hover {
+	background-color: rgba(255,255,255,1);
+}
+a.img {
+	background-color: transparent !important;
+	border-radius: 0px !important;
+	opacity: 0.9;
+	transition: opacity 1s;
+}
+a.img:hover {
+		opacity: 1;
+}
+h1 {
+	font-weight: 100;
+}
+li {
+	list-style: none;
+}
+#face {
+	width: 400px;
+	height: 300px;
+	position: fixed;
+	bottom: -60px;
+	right: -60px;
+	z-index: -1;
+}
+</style>
+</head>
+<body>
+	<h1>
+		Hi.  I'm Dan.
+	</h1>
+	<p>
+		I'm a geek, infosec expert, and optimist.  I like shiny things.
+	</p>
+	<ul>
+		<li><a href="http://skintz.com/">SKINTZ</a> &mdash; I own this.  My side job.</li>
+		<li><a href="https://github.com/RoryCombe/FaviconBar">FaviconBar</a> &mdash; I help make this.  While I sit in a coffee shop.</li>
+		<li><a href="states.html">U.S. States I have visited.</a> &mdash; Let's go.</li> 
+		<li><a href="icecream.jpg">If I had crazy hair.</a> &mdash; I do not have hair.</li>
+	</ul>
+	<p>
+		Contact me.
+	</p>
+	<ul>
+		<li><a class="img" href="http://twitter.com/nevon"><img alt="Twitter" width=42 height=42 src="twitter-512.png"></a> <span title="(contact_dan == fun)">If.</span></li>
+		<li><a class="img" href="http://linkedin.com/in/browder"><img alt="LinkedIn" width=42 height=42 src="linkedin-512.png"></a> <span title="(contact_dan == business)">Else If.</span></li>
+		<li><a class="img" href="mailto:dan at this domain"><img alt="Mail" width=42 height=42 src="mail-512.png"></a> <span title="">Else.</span></li>
+	</ul>
+	<img id="face" src="me.png">
+</body>
+</html>
