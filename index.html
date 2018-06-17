@@ -69,57 +69,45 @@ li {
 }
 #content {
 	position: relative;
-	background-color: rgba(255,255,255,0.2473572);
+	background-color: rgba(255,255,255,0.7);
 	margin: 0px;
 	margin-right: 450px;
 	margin-top: 130px;
 	color: #1d0f84;
 	padding: 20px;
-	border-radius: 30px;
+	border-radius: 5px;
+	font-size: 12pt;
 }
-##content a {
-##	color: #0f41a2;
-##}
+#content a {
+	color: #0f41a2;
+	font-size: 12pt;
+}
+#content h1 {
+	margin: 0px;
+}
+#content blockquote {
+	font-style: italic;
+	margin: 0px;
+	margin-left: 25px;
+}
 </style>
 </head>
 <body>
-	<div id="content"><code>
-			remote: Counting objects: 819, done.        <br>
-			remote: Total 819 (delta 0), reused 0 (delta 0), pack-reused 819        <br>
-			Receiving objects: 100% (819/819), 2.54 MiB | 2.72 MiB/s, done.<br>
-			Resolving deltas: 100% (433/433), done.<br>
-			Submodule path 'themes/landscape': checked out '73a23c51f8487cfcd7c6deec96ccc7543960d350'<br>
-			INFO  Install dependencies<br>
-			npm WARN deprecated titlecase@1.1.2: no longer maintained<br>
-			<a href="">dsdsd</a><br>
-			> fsevents@1.2.4 install /Users/danbrowder/Documents/GitHub/dtb3/node_modules/fsevents<br>
-			> node install<br>
-			<br>
-			[fsevents] Success: "/Users/danbrowder/Documents/GitHub/dtb3/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64/fse.node" already installed<br>
-			Pass --update-binary to reinstall or --build-from-source to recompile<br>
-			<br>
-			> nunjucks@3.1.3 postinstall /Users/danbrowder/Documents/GitHub/dtb3/node_modules/nunjucks<br>
-			> node postinstall-build.js src<br>
-			<br>
-			npm notice created a lockfile as package-lock.json. You should commit this file.<br>
-			added 469 packages from 509 contributors and audited 2028 packages in 22.436s<br>
-			found 0 vulnerabilities<br>
-			<br>
-			INFO  Start blogging with Hexo!<br>
-			kuro:GitHub danbrowder$ cd dtb3/<br>
-			kuro:dtb3 danbrowder$ ls<br>
-			_config.yml		package-lock.json	scaffolds		themes<br>
-			node_modules		package.json		source<br>
-			kuro:dtb3 danbrowder$ npm install<br>
-			audited 2028 packages in 7.506s<br>
-			found 0 vulnerabilities<br>
-			<br>
-			kuro:dtb3 danbrowder$ hexo server<br>
-			INFO  Start processing<br>
-			INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.<br>
-			^CINFO  Farewell<br>
-			kuro:dtb3 danbrowder$ <br>
-		</code>
+	<div id="content">
+		<h1>Third Party Risk Management Exposed</h1>
+		<blockquote>June 16<sup>th</sup>, 2018</blockquote>
+		<div>
+			<p>
+			Hey everybody, a quick update here before we get into more content.  Attached is a presentation I gave at BSides SATX.  
+			Its a great overview of third parth risk management.  I'm going to dive in to some of these topics more deeply here in the coming weeks.
+			</p>
+			<a href="Exposed-TPRM - bsides satx 2018.pdf">Exposed: Getting Control of Your Vendors Before They Expose You</a> (PDF, 7.4MB)
+			<p>With cloud services now a normal part of business how does your organization handle being at fault when one of your third parties is breached?  
+				Properly vetting vendors and third parties is increasingly important to minimize the likelihood of that happening.  
+				We'll explore the current and future state of third party risk management including: how to squeeze vendors for information they might not want 
+				to give you, what to do if you are the service provider getting questions, and how to plan for a breach of your information from a third party.</p>
+		
+		</div>
 		</div>
 	<div id="sidebar">
 		<h1>
@@ -130,7 +118,7 @@ li {
 		</p>
 		<ul>
 			<li><a href="http://skintz.com/">SKINTZ</a> &mdash; I own this.  My side job.</li>
-			<li><a href="https://github.com/RoryCombe/FaviconBar">FaviconBar</a> &mdash; I help make this.  While I sit in a coffee shop.</li>
+			<li><a href="https://github.com/RoryCombe/FaviconBar">FaviconBar</a> &mdash; I help make this.</li>
 			<li><a href="states.html">U.S. States I have visited.</a> &mdash; Let's go.</li> 
 			<li><a href="icecream.jpg">If I had crazy hair.</a> &mdash; I do not have hair.</li>
 			<li><a href="clay_sound_1_.mp4">I made this a long time ago.</a> &mdash; It's still great.</li>
