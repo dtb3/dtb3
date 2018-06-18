@@ -4,14 +4,30 @@
 <title>
 	Dan Browder
 </title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+ crossorigin="anonymous"></script>
 <style>
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500);
 	
-@media only screen and (max-device-width: 736px) {
+@media (max-width: 800px) {
 	body { font-weight: 300 !important; }
-	h1 { font-weight: 300 !important; }
+	h1 { font-weight: 300 !important; font-size: 16pt; }
 	a { font-weight: 300 !important; }
+	#sidebar { display: none;
+	position: absolute !important;
+	top: 30px !important;
+	left: 0px !important;
+	width: 95% !important;
+	background-color: #00C4CD !important;
+	margin: 0px !important;
+	padding: 2.5% !important;
+	box-shadow: 5px 0px 18px #888888;
+	 }
+	div.content { margin-right: 0px !important; }
+	#mobilebar { display: block !important; }
+	div.top { margin-top: 100px !important; }
+	#face { opacity: 0.5; }
 }
 
 body {
@@ -27,7 +43,7 @@ body {
 a {
 	font-size: 90%;
 	font-weight: 400;
-	color: #3b87d5;
+	color:#0f41a2;
 	background-color: rgba(255,255,255,0.7);
 	text-decoration: none;
 	border-radius: 50px;
@@ -58,57 +74,129 @@ li {
 	position: fixed;
 	bottom: -60px;
 	right: -60px;
-	z-index: 9999;
+	/* z-index: 9999; */
+	z-index: -1;
 }
 #sidebar {
 	width: 450px;
 	margin: 10px;
-	position: absolute;
+	position: fixed;
 	right: 0px;
 	top: 0px;
 }
-#content {
+#mobilebar {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height:100px;
+	/* background-color: white; */
+	/* color:#00C4CD; */
+	background-color:#00C4CD;
+	margin: 0px;
+	padding: 0px;
+}
+#mobilebar > #burger {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100px;
+	height: 100px;
+	font-size: 40px;
+	/* background-color: #0f41a2; */
+	/* color: aqua; */
+	display: inline-block;
+	text-align: center;
+	line-height: 100px;
+	cursor:pointer;
+}
+#mobilebar > #head {
+		font-size: 35px;
+		line-height: 100px;
+		text-align: left;
+		display: inline-block;
+		width: 100%;
+		/* background-color: aqua; */
+		/* color: #0f41a2; */
+}
+#mobilebar > #head > span {
+	margin-left: 100px;
+}
+div.content {
 	position: relative;
 	background-color: rgba(255,255,255,0.7);
 	margin: 0px;
 	margin-right: 450px;
-	margin-top: 130px;
+	margin-top: 30px;
 	color: #1d0f84;
 	padding: 20px;
 	border-radius: 5px;
 	font-size: 12pt;
 }
-#content a {
+
+div.content a {
 	color: #0f41a2;
 	font-size: 12pt;
 }
-#content h1 {
+div.content h1 {
 	margin: 0px;
 }
-#content blockquote {
+div.content blockquote {
 	font-style: italic;
 	margin: 0px;
 	margin-left: 25px;
 }
 </style>
+<script type="text/javascript">
+$(document).ready(function () {
+	$('#burger').click(function (e) { 
+		$('#sidebar').toggle(1000);
+		e.preventDefault();		
+	});
+});
+</script>
 </head>
 <body>
-	<div id="content">
+	<div class="content top">
 		<h1>Third Party Risk Management Exposed</h1>
 		<blockquote>June 16<sup>th</sup>, 2018</blockquote>
 		<div>
 			<p>
 			Hey everybody, a quick update here before we get into more content.  Attached is a presentation I gave at BSides SATX.  
-			Its a great overview of third parth risk management.  I'm going to dive in to some of these topics more deeply here in the coming weeks.
+			Its a great overview of third party risk management.  I'm going to dive in to some of these topics more deeply here in the coming weeks.
 			</p>
 			<a href="Exposed-TPRM - bsides satx 2018.pdf">Exposed: Getting Control of Your Vendors Before They Expose You</a> (PDF, 7.4MB)
-			<p>With cloud services now a normal part of business how does your organization handle being at fault when one of your third parties is breached?  
-				Properly vetting vendors and third parties is increasingly important to minimize the likelihood of that happening.  
-				We'll explore the current and future state of third party risk management including: how to squeeze vendors for information they might not want 
-				to give you, what to do if you are the service provider getting questions, and how to plan for a breach of your information from a third party.</p>
+			<p>
+				With cloud services now a normal part of business how does your organization handle being at fault when one of your third parties is breached?  
+				Properly vetting vendors and third parties is increasingly important to minimize the likelihood of that happening. 
+				We'll explore the current and future state of third party risk management including: how to squeeze vendors for information they might not want to give you, what to do if you are the service provider getting questions, and how to plan for a breach of your information from a third party.</p>
 		
 		</div>
+	</div>
+
+	<div class="content">
+		<h1>Third Party Risk Management Exposed</h1>
+		<blockquote>June 16
+			<sup>th</sup>, 2018</blockquote>
+		<div>
+			<p>
+				Hey everybody, a quick update here before we get into more content. Attached is a presentation I gave at BSides SATX. Its
+				a great overview of third party risk management. I'm going to dive in to some of these topics more deeply here in the
+				coming weeks.
+			</p>
+			<a href="Exposed-TPRM - bsides satx 2018.pdf">Exposed: Getting Control of Your Vendors Before They Expose You</a> (PDF, 7.4MB)
+			<p>
+				With cloud services now a normal part of business how does your organization handle being at fault when one of your third
+				parties is breached? Properly vetting vendors and third parties is increasingly important to minimize the likelihood of
+				that happening. We'll explore the current and future state of third party risk management including: how to squeeze vendors
+				for information they might not want to give you, what to do if you are the service provider getting questions, and how
+				to plan for a breach of your information from a third party.</p>
+	
 		</div>
+	</div>
+
+
 	<div id="sidebar">
 		<h1>
 			Hi.  I'm Dan.
@@ -131,6 +219,10 @@ li {
 			<li><a class="img" href="http://linkedin.com/in/browder"><img alt="LinkedIn" width=42 height=42 src="linkedin-512.png"></a> <span title="(contact_dan == business)">Else If.</span></li>
 			<li><a class="img" href="mailto:dan at this domain"><img alt="Mail" width=42 height=42 src="mail-512.png"></a> <span title="">Else.</span></li>
 		</ul>
+	</div>
+	<div id="mobilebar">
+		<span id="burger">&#9776;</span>
+		<span id="head"><span>Hi. I'm Dan.</span></span>
 	</div>
 	<img id="face" src="brightme.png">
 </body>
