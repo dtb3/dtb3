@@ -80,6 +80,12 @@ li {
 	bottom: -60px;
 	right: -60px;
 	z-index: -1;
+	background: url("brightme.png") no-repeat;
+	background-size: contain;
+}
+#face:hover {
+	background: url("brightpopcorn.png") no-repeat;
+	background-size: contain;
 }
 #sidebar {
 	width: 450px;
@@ -156,34 +162,17 @@ $(document).ready(function () {
 </script>
 </head>
 <body>
-
+<!--
 	<div class="content">
-		<h1>Exciting News</h1>
+		<h1>Nothing Here</h1>
 		<blockquote>August 1<sup>st</sup>, 2018</blockquote>
 		<div>
 			<p>
-			Some big news - I will be be giving a talk at <a href="https://www.derbycon.com">DerbyCon</a> this fall on TPRM titled "Getting Control of Your Vendors Before They Take You Down".
-			This will be an updated and enhanced version of the talk given at BSides SATX below.  Because of that I have removed the previous slide deck from this page, but if you need it or just want to chat about third parties, please do get in touch.
+			Ignore This :)
 			</p>
 		</div>
 	</div>
-
-	<div class="content">
-		<h1>Third Party Risk Management Exposed</h1>
-		<blockquote>June 16<sup>th</sup>, 2018</blockquote>
-		<div>
-			<p>
-			Hey everybody, a quick update here before we get into more content.  Attached is a presentation I gave at BSides SATX.  
-			Its a great overview of third party risk management.  I'm going to dive in to some of these topics more deeply here in the coming weeks.
-			</p>
-			(Link Removed - See Above) Exposed: Getting Control of Your Vendors
-			<p>
-				With cloud services now a normal part of business how does your organization handle being at fault when one of your third parties is breached?  
-				Properly vetting vendors and third parties is increasingly important to minimize the likelihood of that happening. 
-				We'll explore the current and future state of third party risk management including: how to squeeze vendors for information they might not want to give you, what to do if you are the service provider getting questions, and how to plan for a breach of your information from a third party.</p>
-		
-		</div>
-	</div>
+-->
 
 	<div id="sidebar">
 		<h1>
@@ -193,8 +182,8 @@ $(document).ready(function () {
 			I'm a geek, infosec expert, and optimist.  I like shiny things.
 		</p>
 		<ul>
-			<li><a href="http://skintz.com/">SKINTZ</a> &mdash; I own this.  My side job.</li>
-			<li><a href="https://github.com/RoryCombe/FaviconBar">FaviconBar</a> &mdash; I help make this.</li>
+			<li><a href="http://kernelcon.org/">Kernelcon</a> &mdash; I'm part of this.</li>
+			<li><a href="https://github.com/kernelcon/hacker-hotkey">Hacker Hotkey</a> &mdash; I helped make this.</li>
 			<li><a href="states.html">U.S. States I have visited.</a> &mdash; Let's go.</li> 
 			<li><a href="icecream.jpg">If I had crazy hair.</a> &mdash; I do not have hair.</li>
 			<li><a href="clay_sound_1_.mp4">I made this a long time ago.</a> &mdash; It's still great.</li>
@@ -212,6 +201,6 @@ $(document).ready(function () {
 		<span id="burger">&#9776;</span>
 		<span id="head"><span>Hi. I'm Dan.</span></span>
 	</div>
-	<img id="face" src="brightme.png">
+	<div id="face"></div>
 </body>
 </html>
